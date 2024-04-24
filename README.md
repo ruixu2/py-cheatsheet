@@ -18,6 +18,12 @@
 ## P
 - [Pandas_Cheat_Sheet.pdf](./P/Pandas_Cheat_Sheet.pdf)
 
+- [Python_Basics_Cheat_Sheet-updated.pdf](./P/Python_Basics_Cheat_Sheet-updated.pdf)
+
 ## S
+- [Scikit-Learn_Cheat_Sheet.pdf](./S/Scikit-Learn_Cheat_Sheet.pdf)
+
 - [SciPy_Cheat_Sheet.pdf](./S/SciPy_Cheat_Sheet.pdf)
+
+- [Seaborn_Cheat_Sheet.pdf](./S/Seaborn_Cheat_Sheet.pdf)
 

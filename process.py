@@ -1,7 +1,6 @@
 import os
 import shutil
 
-
 def archive_pdf():
     # 归档到文件夹
     pdf_file_list = os.listdir("./")
@@ -39,7 +38,6 @@ def generate_md():
     f = open("README.md", mode='w', encoding='utf-8')
     f.write(md_start + md_index + md_content)
     f.close()
-
 
 if __name__ == '__main__':
     archive_pdf()
