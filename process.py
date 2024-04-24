@@ -23,13 +23,13 @@ def generate_md():
     print(pdf_dict)
     md_start = """# 常用python库的速查表
     收集常用python库的速查表"""
-    md_index = "\n"
+    md_index = "\n\n"
     for item in dir_list:
         if os.path.isdir(item) and item.isalpha():
             temp = f"[{item}](#{item})\t"
             md_index += temp
 
-    md_content = "\n"
+    md_content = "\n\n"
     for key in pdf_dict.keys():
         md_content += f"## {key}\n"
         for item in pdf_dict[key]:
