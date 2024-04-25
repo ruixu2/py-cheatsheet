@@ -1,6 +1,7 @@
 import os
 import shutil
 
+
 def archive_pdf():
     # 归档到文件夹
     pdf_file_list = os.listdir("./")
@@ -32,13 +33,15 @@ def generate_md():
     for key in pdf_dict.keys():
         md_content += f"## {key}\n"
         for item in pdf_dict[key]:
-            temp = f"- [{item}](./{key}/{item})\n\n"
+            temp = f"- [{item}]({base_url}./{key}/{item})\n\n"
             md_content += temp
 
     f = open("README.md", mode='w', encoding='utf-8')
     f.write(md_start + md_index + md_content)
     f.close()
 
+
 if __name__ == '__main__':
+    base_url = "https://github.com/ruixu2/py-cheatsheet/blob/main/"
     archive_pdf()
     generate_md()
